@@ -1,9 +1,5 @@
-@import 'reset';
-@import 'colors';
-@import 'base';
-$spacing: 8px;
 * {
-	font-family: 'Roboto', sans-serif !important;
+	font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
@@ -48,47 +44,12 @@ button {
 }
 
 .chat {
-	display: flex;
-	align-items: center;
 	width: 90%;
 	max-width: 90%;
 	border-radius: 6px;
-	background-color: $lightgrey;
 	padding: 20px;
-	position: relative;
-
-	&:not(:last-child) {
-		margin-bottom: $spacing;
-	}
-
-	&__name {
-		font-weight: 700;
-		padding-right: 4px;
-	}
-
-	&__message {
-		padding-right: 4px;
-		color: $text-color;
-	}
 
 	img {
-		width: 50px;
-		margin-right: $spacing;
-		border-radius: 50%;
-	}
-
-	&__amount {
-		width: 25px;
-		height: 25px;
-		background: lightcoral;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: absolute;
-		left: -10px;
-		top: -3px;
-		font-size: 12px;
-		color: white;
 		border-radius: 50%;
 	}
 }

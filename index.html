@@ -1,59 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link href="styles.css" rel="stylesheet" />
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Notifications page</title>
-
-</head>
-<body>
-  <div class="wrapper unread">
-    <div class="header">
-      <h1>Notifications<span id="count">3</span></h1>
-      <button id="read"> Mark all as read
-      </button>
-    </div>
-
-    <div class="chat">
-      <div class="chat__avatar">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper unread">
+      <div class="header">
+        <h1>Notifications<span id="count">3</span></h1>
+        <button id="read" class="btn btn--header"> Mark all as read
+        </button>
       </div>
-      <div class="chat__name"> Mark Webber </div>
-      <div class="chat__message"> reacted to your recent post My first tournament today!
+      <div class="chat">
+        <div class="chat__avatar">
+          <img src="https://randomuser.me/api/portraits/women/3.jpg" />
+        </div>
+        <div class="chat__name"> Mark Webber </div>
+        <div class="chat__message"> reacted to your recent post My first tournament today!
+        </div>
+        <div class="chat__timestamp"></div>
+        <div class="chat__amount">1</div>
       </div>
-      <div class="chat__timestamp"></div>
-
-      Angela Gray followed you
-      5m ago
-
-      Jacob Thompson has joined your group Chess Club
-      1 day ago
-
-      Rizky Hasanuddin sent you a private message
-      5 days ago
-      Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-      I'm already having lots of fun and improving my game.
-
-      Kimberly Smith commented on your picture
-      1 week ago
-
-      Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-      2 weeks ago
-
-      Anna Kim left the group Chess Club
-      2 weeks ago
-
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+      <div class="chat">
+        <div class="chat__avatar">
+          <img src="https://randomuser.me/api/portraits/women/3.jpg" />
+        </div>
+        <div class="chat__name"> Angela Webber </div>
+        <div class="chat__message"> liked your recent post My first tournament today!
+        </div>
+        <div class="chat__timestamp">1h ago</div>
+        <div class="chat__amount">11</div>
+      </div>
+      <div class="chat">
+        <div class="chat__avatar">
+          <photo>
+            <img src="https://randomuser.me/api/portraits/women/3.jpg">
+          </photo>>
+        </div>
+        <div class="chat__name">Jacob Thompson</div>
+        <div class="chat__message">has joined your group Chess Club</div>
+        <div class="chat__timestamp">
+          1 day ago
+        </div>
+        <div class="chat__amount">0</div>
+      </div>
+      <div class="chat">
+        <div class="chat__avatar">
+          <photo>
+            <img src="https://randomuser.me/api/portraits/women/3.jpg">
+          </photo>
+        </div>
+        <div class="chat__name">Rizky Hasanuddin</div>
+        <div class="chat__message">sent you a private message
+          <div class="sub-msg">I'm already having lots of fun and improving my game.
+            Kimberly Smith commented on your picture
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            1 week ago</div>
+        </div>
+        <div class="chat__timestamp">
+          5 days ago
+        </div>
+        <div class="chat__amount">5</div>
       </div>
     </div>
     <script src="myscripts.js"></script>
-</body>
-
+  </body>
 </html>

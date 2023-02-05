@@ -1,6 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
+}
+
+button {
+  all: unset;
+}
+button.btn {
+  font-family: "Roboto", sans-serif;
+  color: #62656d;
+  cursor: pointer;
 }
 
 .header {
@@ -8,20 +156,124 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
-.header #count {
+
+#count {
   border-radius: 6px;
-  padding: 6px 12px;
   background: #073080;
   color: white;
+  max-width: 105px;
+  margin-left: 12px;
+  font-size: 18px;
+  max-height: 105px;
 }
-.header h1 {
+#count:hover {
+  background: #083998;
+}
+
+.chat {
+  width: 90%;
+  max-width: 90%;
+  border-radius: 6px;
+  padding: 20px;
+}
+.chat img {
+  border-radius: 50%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  padding: 0;
   margin: 0;
   font-size: 40px;
 }
-.header .avatar {
-  border-radius: 100%;
-  background: purple;
+
+* {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+button {
+  all: unset;
+}
+button.btn {
+  font-family: "Roboto", sans-serif;
+  color: #62656d;
+  cursor: pointer;
+}
+
+.header {
+  padding: 6px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#count {
+  border-radius: 6px;
+  background: #073080;
+  color: white;
+  max-width: 105px;
+  margin-left: 12px;
+  font-size: 18px;
+  max-height: 105px;
+}
+#count:hover {
+  background: #083998;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 90%;
+  border-radius: 6px;
+  background-color: #f6fafd;
+  padding: 20px;
+  position: relative;
+}
+.chat:not(:last-child) {
+  margin-bottom: 8px;
+}
+.chat__name {
+  font-weight: 700;
+  padding-right: 4px;
+}
+.chat__message {
+  padding-right: 4px;
+  color: #b7bac1;
+}
+.chat img {
   width: 50px;
-  height: 50px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+.chat__amount {
+  width: 25px;
+  height: 25px;
+  background: lightcoral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -10px;
+  top: -3px;
+  font-size: 12px;
+  color: white;
+  border-radius: 50%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
 }/*# sourceMappingURL=styles.css.map */
