@@ -1,13 +1,16 @@
 const count = document.getElementById('count');
 const wrapper = document.getElementsByClassName('wrapper');
+const chatAlert = document.querySelectorAll('.chat__amount');
 const read = document.getElementById('read');
 console.log(count, read, wrapper);
 
 read.addEventListener('click', (event) => {
+	chatAlert[1].innerHTML = '0';
+
+	console.log(chatAlert.innerHTML);
+
 	const wrapper = document.getElementsByClassName('wrapper');
 	wrapper[0].classList.remove('unread');
-
-	console.log('click +' + wrapper);
 });
 
 function aaa() {
@@ -25,5 +28,4 @@ function aaa() {
 		div.style.color = 'red';
 	});
 }
-
 aaa();
