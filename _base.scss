@@ -1,4 +1,3 @@
-// @import 'variables';
 * {
 	font-family: 'Roboto', sans-serif !important;
 }
@@ -6,6 +5,7 @@
 .wrapper {
 	max-width: 768px;
 	margin: 0 auto;
+	padding: 40px;
 }
 
 button {
@@ -52,7 +52,27 @@ button {
 	border-radius: 6px;
 	background-color: $lightgrey;
 	padding: 20px;
-	position: relative;
+
+	&.image {
+		.chat__outer {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
+	}
+	&.multiple {
+		display: flex;
+	}
+
+	&__two-messages {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
 
 	&:not(:last-child) {
 		margin-bottom: $spacing;
@@ -63,9 +83,36 @@ button {
 		padding-right: 4px;
 	}
 
+	img.chat__thumbnail {
+		border-radius: 6px;
+	}
+
+	&__multiple {
+		display: flex;
+	}
+
 	&__message {
+		display: flex;
+		align-items: center;
 		padding-right: 4px;
 		color: $text-color;
+
+		.alert {
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #fd5854;
+			display: inline-block;
+		}
+	}
+
+	&__timestamp {
+		color: #d1d4d9;
+		padding: 0;
+	}
+
+	&__avatar {
+		position: relative;
 	}
 
 	img {
@@ -83,7 +130,7 @@ button {
 		justify-content: center;
 		position: absolute;
 		left: -10px;
-		top: -3px;
+		top: -5px;
 		font-size: 12px;
 		color: white;
 		border-radius: 50%;
