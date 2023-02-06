@@ -168,6 +168,7 @@ button.btn {
   margin-left: 12px;
   font-size: 18px;
   max-height: 105px;
+  padding: 12px;
 }
 #count:hover {
   background: #083998;
@@ -187,7 +188,6 @@ h1 {
   width: 90%;
   max-width: 90%;
   border-radius: 6px;
-  background-color: #f6fafd;
   padding: 20px;
 }
 .chat.image .chat__outer {
@@ -247,11 +247,17 @@ h1 {
   margin-right: 12px;
   border-radius: 50%;
 }
+.chat.unread {
+  background-color: #f6fafd;
+}
+.chat.unread .chat__amount {
+  display: flex;
+}
 .chat__amount {
+  display: none;
   width: 25px;
   height: 25px;
   background: lightcoral;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;

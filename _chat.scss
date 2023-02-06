@@ -4,7 +4,6 @@
 	width: 90%;
 	max-width: 90%;
 	border-radius: 6px;
-	background-color: $lightgrey;
 	padding: 20px;
 
 	&.image {
@@ -14,6 +13,7 @@
 			width: 100%;
 		}
 	}
+
 	&.multiple {
 		display: flex;
 	}
@@ -47,7 +47,6 @@
 	&__message {
 		display: flex;
 		align-items: center;
-
 		color: $dark-text;
 
 		a {
@@ -80,11 +79,19 @@
 		border-radius: 50%;
 	}
 
+	&.unread {
+		background-color: $lightgrey;
+
+		.chat__amount {
+			display: flex;
+		}
+	}
+
 	&__amount {
+		display: none;
 		width: 25px;
 		height: 25px;
 		background: lightcoral;
-		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: absolute;
