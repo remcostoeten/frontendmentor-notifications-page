@@ -64,11 +64,11 @@
 		}
 
 		.alert {
+			display: none;
 			width: 6px;
 			height: 6px;
 			border-radius: 50%;
-			background: #fd5854;
-			display: inline-block;
+			background: $alert;
 			margin-left: 3px;
 		}
 	}
@@ -88,7 +88,7 @@
 	}
 
 	&.unread {
-		background-color: $lightgrey;
+		background: darken($lightgrey, 5%);
 
 		.chat__amount {
 			display: flex;
@@ -99,7 +99,7 @@
 		display: none;
 		width: 25px;
 		height: 25px;
-		background: lightcoral;
+		background: $alert;
 		align-items: center;
 		justify-content: center;
 		position: absolute;
