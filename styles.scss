@@ -1,5 +1,13 @@
-@import './scss/variables/variables';
-@import 'reset';
-@import 'colors';
-@import 'base';
-@import 'chat';
+// Abstracts
+@import './scss/abstracts/variables';
+@import './scss/abstracts/mixins';
+
+// Base
+@import './scss/base/colors';
+@import './scss/base/base';
+@import './scss/base/typography';
+@import './scss/base/reset';
+
+// components
+@import './scss/components/chat';
+@import './scss/components/header';

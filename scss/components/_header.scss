@@ -1,0 +1,20 @@
+.header {
+	padding: 6px 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+#count {
+	border-radius: 6px;
+	background: $blue;
+	color: #fff;
+	margin-left: 12px;
+	font-size: 18px;
+	padding: 8px;
+
+	&:hover {
+		background: lighten($blue, 5%);
+	}
+}

@@ -1,0 +1,16 @@
+.wrapper {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+button {
+	all: unset;
+
+	&.btn {
+		color: $grey-text-btn;
+		cursor: pointer;
+	}
+}
+
+$border: #e3e6e5;

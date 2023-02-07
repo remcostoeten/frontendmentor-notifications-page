@@ -14,8 +14,10 @@
 		}
 	}
 
-	&.multiple {
-		display: flex;
+	.multiple {
+		.chat__timestamp {
+			padding-bottom: 5px;
+		}
 	}
 
 	&__two-messages {
@@ -36,7 +38,7 @@
 		font-weight: 700;
 	}
 
-	img.chat__thumbnail {
+	img.chat__1il {
 		border-radius: 6px;
 	}
 
@@ -49,9 +51,16 @@
 		align-items: center;
 		color: $dark-text;
 
+		&.second-message {
+			padding: calc($spacing * 1.5) $spacing;
+			border: 1px solid $border;
+			border-radius: 4px;
+		}
+
 		a {
 			text-decoration: none;
 			color: $link-color;
+			font-weight: $font-weight__bold;
 		}
 
 		.alert {
@@ -66,7 +75,7 @@
 
 	&__timestamp {
 		color: #d1d4d9;
-		padding: 0;
+		padding: 5px 0;
 	}
 
 	&__avatar {
@@ -76,7 +85,6 @@
 	img {
 		width: 50px;
 		margin-right: $spacing;
-		border-radius: 50%;
 	}
 
 	&.unread {
