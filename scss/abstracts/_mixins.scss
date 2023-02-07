@@ -8,18 +8,6 @@
 	}
 }
 
-@mixin below-desktop {
-	@media (min-width: #{$screen__zero}) and (max-width: #{$screen__l}) {
-		@content;
-	}
-}
-
-@mixin big-desktop {
-	@media (min-width: #{1920px}) {
-		@content;
-	}
-}
-
 @mixin desktop {
 	@media (min-width: #{$screen__l}) {
 		@content;
@@ -32,73 +20,8 @@
 	}
 }
 
-@mixin tablet {
-	@media (min-width: #{$screen__m}) and (max-width: #{$screen__l - 1px}) {
-		@content;
-	}
-}
-
 @mixin mobile {
 	@media (min-width: #{$screen__zero}) and (max-width: #{$screen__m - 1px}) {
 		@content;
 	}
-}
-
-@mixin mobile-small {
-	@media (min-width: #{$screen__zero}) and (max-width: #{$screen__s - 1px}) {
-		@content;
-	}
-}
-
-@mixin mobile-xs {
-	@media (min-width: #{$screen__xxs}) and (max-width: #{$screen__xs - 1px}) {
-		@content;
-	}
-}
-
-@mixin mobile-xxs {
-	@media (max-width: #{$screen__xxs - 1px}) {
-		@content;
-	}
-}
-
-@include tablet {
-	.hide-mobile-tablet {
-		display: none;
-	}
-}
-
-@include mobile {
-	.hide-mobile-tablet {
-		display: none !important;
-	}
-
-	.hide-mobile {
-		display: none !important;
-	}
-}
-
-@include mobile-small {
-	.hide-mobile-tablet {
-		display: none !important;
-	}
-}
-
-.hide-desktop {
-	display: none !important;
-
-	@include mobile {
-		display: block !important;
-	}
-
-	@include mobile-small {
-		display: block !important;
-	}
-}
-
-@mixin center-absolute {
-	left: 0;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, -50%);
 }

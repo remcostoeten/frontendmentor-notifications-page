@@ -6,6 +6,11 @@
 	border-radius: 6px;
 	padding: 20px;
 
+	&.read {
+		transition: 1s ease all;
+		background: none;
+	}
+
 	&.image {
 		.chat__outer {
 			display: flex;
@@ -57,6 +62,10 @@
 			border-radius: 4px;
 		}
 
+		strong {
+			color: $color-secondary;
+		}
+
 		a {
 			text-decoration: none;
 			color: $link-color;
@@ -88,15 +97,20 @@
 	}
 
 	&.unread {
-		background: darken($lightgrey, 5%);
+		background: $lightgrey;
 
 		.chat__amount {
 			display: flex;
+			opacity: 100;
 		}
 	}
 
 	&__amount {
-		display: none;
+		transition: 250ms ease all;
+		opacity: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 25px;
 		height: 25px;
 		background: $alert;

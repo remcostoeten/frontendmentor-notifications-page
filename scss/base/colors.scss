@@ -1,11 +1,18 @@
 $blue: #073080;
-$lightgrey: #f6fafd;
-$grey: #b7bac1;
-$alert: #fd5854;
-$grey-text-btn: #62656d;
+$lightgrey: hsl(210, 60%, 98%);
+$grey: hsl(219, 14%, 63%);
+$grey-text-btn: $grey;
 $link-color: #061b4d;
-$white: #f9fafe;
-$black: #30333a;
-$color-white: #fff;
+$color-white: hsl(0, 0%, 100%);
+$black: hsl(224, 21%, 14%);
+$color-white: hsl(0, 0%, 100%);
 $dark-text: #898c93;
 $text-color: $grey;
+
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+
+$color-primary: $red;
+$color-secondary: $blue;
+
+$alert: $red;
