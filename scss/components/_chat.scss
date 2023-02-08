@@ -32,11 +32,6 @@
 		}
 	}
 
-	.thumb {
-		display: flex;
-		align-items: center;
-	}
-
 	.multiple {
 		.chat__timestamp {
 			padding-bottom: 5px;
@@ -66,6 +61,26 @@
 
 	&__multiple {
 		display: flex;
+
+		@include mobile {
+			display: block;
+		}
+
+		@include tablet {
+			display: block;
+		}
+	}
+
+	.thumb {
+		display: flex;
+
+		@include mobile {
+			display: block;
+		}
+
+		@include tablet {
+			display: block;
+		}
 	}
 
 	&__message {
@@ -156,6 +171,14 @@
 
 		&__message {
 			display: block;
+		}
+	}
+}
+
+@include tablet {
+	.chat {
+		&__inner {
+			flex-direction: column;
 		}
 	}
 }

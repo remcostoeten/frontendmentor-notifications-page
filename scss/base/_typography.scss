@@ -14,7 +14,14 @@ $font-weight__regular: 500;
 $font-weight__bold: 800;
 
 body {
-	font-size: 16px;
+	font-size: 16px !important;
+
+	@include tablet {
+		font-size: 1rem !important;
+	}
+	@include mobile {
+		font-size: 0.9rem !important;
+	}
 }
 
 strong {

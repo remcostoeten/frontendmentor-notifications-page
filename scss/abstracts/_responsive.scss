@@ -1,8 +1,10 @@
 $screen__zero: 0px;
 $screen__m: 375px;
+$screen__ml: 768px;
 $screen__l: 144px;
 
 $breakpoints: (
 	mobile: $screen__m,
+	tablet: $screen__ml,
 	desktop: $screen__l,
 );

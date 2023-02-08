@@ -35,5 +35,21 @@ header {
 		h1 {
 			font-size: 18px;
 		}
+
+		#count {
+			font-size: 12px;
+		}
+	}
+}
+
+@include tablet {
+	header {
+		h1 {
+			font-size: 18px;
+		}
+
+		#count {
+			font-size: 12px;
+		}
 	}
 }

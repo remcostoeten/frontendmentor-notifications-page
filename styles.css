@@ -80,7 +80,17 @@ button.btn {
 }
 
 body {
-  font-size: 16px;
+  font-size: 16px !important;
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  body {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 374px) {
+  body {
+    font-size: 0.9rem !important;
+  }
 }
 
 strong {
@@ -248,10 +258,6 @@ table {
 .chat.image .chat__inner {
   flex-direction: column;
 }
-.chat .thumb {
-  display: flex;
-  align-items: center;
-}
 .chat .multiple .chat__timestamp {
   padding-bottom: 5px;
 }
@@ -273,6 +279,29 @@ table {
 }
 .chat__multiple {
   display: flex;
+}
+@media (min-width: 0px) and (max-width: 374px) {
+  .chat__multiple {
+    display: block;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .chat__multiple {
+    display: block;
+  }
+}
+.chat .thumb {
+  display: flex;
+}
+@media (min-width: 0px) and (max-width: 374px) {
+  .chat .thumb {
+    display: block;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .chat .thumb {
+    display: block;
+  }
 }
 .chat__message {
   align-items: center;
@@ -349,6 +378,11 @@ table {
     display: block;
   }
 }
+@media (min-width: 375px) and (max-width: 767px) {
+  .chat__inner {
+    flex-direction: column;
+  }
+}
 header {
   padding: 6px 12px;
   display: flex;
@@ -382,5 +416,16 @@ header h1 {
   }
   header h1 {
     font-size: 18px;
+  }
+  header #count {
+    font-size: 12px;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  header h1 {
+    font-size: 18px;
+  }
+  header #count {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=styles.css.map */
