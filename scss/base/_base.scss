@@ -14,3 +14,13 @@ button {
 }
 
 $border: #e3e6e5;
+
+@include mobile {
+	.wrapper {
+		padding: 8px;
+	}
+	
+	button.btn {
+		font-size: 12px;
+	}
+}

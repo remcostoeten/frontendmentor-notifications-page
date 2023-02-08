@@ -12,6 +12,14 @@ button.btn {
   cursor: pointer;
 }
 
+@media (min-width: 0px) and (max-width: 374px) {
+  .wrapper {
+    padding: 8px;
+  }
+  button.btn {
+    font-size: 12px;
+  }
+}
 @font-face {
   font-family: "Jakarta";
   src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format("truetype");
@@ -266,6 +274,18 @@ table {
   border-radius: 50%;
 }
 
+@media (min-width: 0px) and (max-width: 374px) {
+  .chat__name {
+    display: flex;
+    width: 100%;
+  }
+  .chat__inner {
+    flex-wrap: wrap;
+  }
+  .chat__message {
+    display: block;
+  }
+}
 .header {
   padding: 6px 12px;
   display: flex;
@@ -290,4 +310,14 @@ table {
 }
 #count:hover {
   background: #0c3b92;
+}
+
+@media (min-width: 0px) and (max-width: 374px) {
+  .header {
+    padding: 12px 0;
+    margin: 0;
+  }
+  .header h1 {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=styles.css.map */

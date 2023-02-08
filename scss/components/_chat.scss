@@ -124,3 +124,20 @@
 		border-radius: 50%;
 	}
 }
+
+@include mobile {
+	.chat {
+		&__name {
+			display: flex;
+			width: 100%;
+		}
+
+		&__inner {
+			flex-wrap: wrap;
+		}
+
+		&__message {
+			display: block;
+		}
+	}
+}
