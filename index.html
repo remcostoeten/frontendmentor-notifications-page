@@ -14,18 +14,18 @@
   <body>
     </div>
     <div class="wrapper unread">
-      <div class="intro">
-        <p>Small case project from <a href="https://www.frontendmentor.io" target="blank">Frontend mentor</a>. Site
-          where
-          you pick your challenge and get all the files and info to complete the case without telling you how.
-          Styleguide,
-          case overview and designs (in my case only jpg's so not sure about the correct font sizes and overall sizes).
-        </p>
-        <p><br>Goal for me was to practice some basic JS principles and showcase my style of writing SASS and HTML
-          althrough
-          admittedly
-          it
-          could be neater. </p>
+      <article>
+        <div class="intro">
+          <p>Small case project from <a href="https://www.frontendmentor.io" target="blank">Frontend mentor</a>. Site
+            where you pick your challenge and get all the files and info necessary to complete the case without
+            guidance. Only after completing the case feedback is possible.
+            All the necessary info is given e.g. styleguide, case overview, logic and design files (in my case only
+            JPG's hence the spacing and sizes might be a bit off) are given, and only after finishing the repo it's
+            possible to get feedback if you want, not prior, to promote learning to debug etc.</p>
+          <p><br>Goal for me was to practice some basic JS principles and showcase my style of writing SASS and HTML
+            althrough admittedly it could be neater. For a large project I would setup the SASS structure a bit more
+            efficient and extensive. </p>
+        </div>
         <main>
           <div>
             <details class="accordion">
@@ -178,11 +178,11 @@
               <div class="accordion__content">
                 <div class="wrapper">
                   <figure>
-                    <img src="design/desktop-design.jpg" />
+                    <img alt="frontendmentor designs" src="design/desktop-design.jpg" />
                     <figcaption>Desktop design</figcaption>
                   </figure>
                   <figure>
-                    <img src="design/mobile-design.jpg" />
+                    <img alt="frontendmentor designs" src="design/mobile-design.jpg" />
                     <figcaption>Mobilwe design</figcaption>
                   </figure>
                 </div>
@@ -190,9 +190,9 @@
             </details>
           </div>
         </main>
-      </div>
+      </article>
       <header>
-        <h1>Notifications<span id="count">3</span></h1>
+        <h1>Notifications<span id="count"></span></h1>
         <button id="read" class="btn btn--header">Mark all as read
         </button>
       </header>
