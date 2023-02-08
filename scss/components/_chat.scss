@@ -6,6 +6,16 @@
 	border-radius: 6px;
 	padding: 20px;
 
+	.alert {
+		display: none !important;
+	}
+
+	&.unread {
+		.alert {
+			display: block !important;
+		}
+	}
+
 	&.multiple {
 		align-items: flex-start;
 	}

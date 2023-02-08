@@ -240,6 +240,12 @@ table {
   border-radius: 6px;
   padding: 20px;
 }
+.chat .alert {
+  display: none !important;
+}
+.chat.unread .alert {
+  display: block !important;
+}
 .chat.multiple {
   align-items: flex-start;
 }
