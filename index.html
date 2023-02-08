@@ -12,17 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="intro">
+    </div>
     <div class="wrapper unread">
-      <div class="header">
+      <header>
         <h1>Notifications<span id="count">3</span></h1>
         <button id="read" class="btn btn--header">Mark all as read
         </button>
-      </div>
-      <div class="chat">
+      </header>
+      <section class="chat">
         <div class="chat__avatar">
-          <photo>
+          <figure>
             <img alt="user-avatar" src="assets/images/avatar-mark-webber.webp" />
-          </photo>
+          </figure>
           <div class="chat__amount">1</div>
         </div>
         <div class="chat__outer">
@@ -35,12 +37,12 @@
           </div>
           <div class="chat__timestamp">1m ago</div>
         </div>
-      </div>
-      <div class="chat">
+      </section>
+      <section class="chat">
         <div class="chat__avatar">
-          <photo>
+          <figure>
             <img alt="user-avatar" src="assets/images/avatar-angela-gray.webp" />
-          </photo>
+          </figure>
           <div class="chat__amount">11</div>
         </div>
         <div class="chat__outer">
@@ -52,12 +54,12 @@
           </div>
           <div class="chat__timestamp">1m ago</div>
         </div>
-      </div>
+      </section>
       <div class="chat">
         <div class="chat__avatar">
-          <photo>
+          <figure>
             <img alt="user-avatar" src="assets/images/avatar-anna-kim.webp" />
-          </photo>
+          </figure>
           <div class=" chat__amount">3
           </div>
         </div>
@@ -71,11 +73,11 @@
           <div class="chat__timestamp">1m ago</div>
         </div>
       </div>
-      <div class="chat multiple ">
+      <section class="chat multiple ">
         <div class="chat__avatar">
-          <photo>
+          <figure>
             <img alt="user-avatar" src="assets/images/avatar-rizky-hasanuddin.webp" alt />
-          </photo>
+          </figure>
           <div class="chat__amount">0</div>
         </div>
         <div class="multiple">
@@ -92,12 +94,12 @@
             I'm already having lots of fun and improving my game.
           </div>
         </div>
-      </div>
-      <div class="chat image">
+      </section>
+      <section class="chat image">
         <div class="chat__avatar">
-          <photo>
+          <figure>
             <img alt="user-avatar" src="assets/images/avatar-nathan-peterson.webp" />
-          </photo>
+          </figure>
           <div class="chat__amount">0</div>
         </div>
         <div class="chat__outer">
@@ -109,14 +111,11 @@
             </div>
             <div class="chat__timestamp">4 weeks ago</div>
           </div>
-          <photo>
+          <figure>
             <img class="chat__thumbnail" src="assets/images/image-chess.webp" alt="chess image" />
-          </photo>
+          </figure>
         </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    <script src="site.js"></script>
+      </section>
+      <script src="site.js"></script>
   </body>
 </html>

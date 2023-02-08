@@ -298,14 +298,14 @@ table {
     display: block;
   }
 }
-.header {
+header {
   padding: 6px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
 }
-.header h1 {
+header h1 {
   font-size: 32px;
   display: flex;
   align-items: center;
@@ -325,11 +325,11 @@ table {
 }
 
 @media (min-width: 0px) and (max-width: 374px) {
-  .header {
+  header {
     padding: 12px 0;
     margin: 0;
   }
-  .header h1 {
+  header h1 {
     font-size: 18px;
   }
 }/*# sourceMappingURL=styles.css.map */
