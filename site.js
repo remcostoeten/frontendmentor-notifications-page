@@ -2,17 +2,7 @@ const notificationAlert = document.getElementsByClassName('chat__amount');
 const chatAmount = document.getElementsByClassName('chat__amount');
 const chatWrapper = document.getElementsByClassName('chat');
 const alertStar = document.querySelectorAll('.alert');
-const headerCount = document.getElementById('count');
-const unreadClass = document.getElementsByClassName('unread');
-
-const totalCount = unreadClass.length - 1;
-console.log(unreadClass.length - 1);
-const x = unreadClass.length - 1;
-
-const totalUnread = document.getElementByClassName('unread').length - 1;
-console.log(totalUnread + 'a');
-
-count.innerHTML = totalUnread;
+const bigCount = document.getElementById('count');
 
 for (let i = 0; i < chatAmount.length; i++) {
 	if (!(chatAmount[i].textContent === '0')) {
@@ -21,16 +11,20 @@ for (let i = 0; i < chatAmount.length; i++) {
 		chatWrapper[i].classList.add('read');
 	}
 
+
+	const x = document.querySelectorAll('.read');
+console.log(x.length);
+	bigCount.innerHTML = x.length +1;
 	read.addEventListener('click', () => {
 		notificationAlert[i].innerHTML = '0';
 		chatWrapper[i].classList.remove('unread');
+		bigCount.innerHTML = '0';
 
 		if (chatAmount[i].textContent === '0') {
 		}
 	});
 }
 
-console.log(unreadClass.length);
 // intro
 var coll = document.getElementsByClassName('collapsible');
 var i;

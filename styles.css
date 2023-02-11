@@ -7,7 +7,8 @@ body:before {
   background: linear-gradient(150deg, #f731db, #4600f1 100%);
   position: absolute;
   background-size: 400% 400%;
-  animation: gradient-bg 15s ease infinite;
+  -webkit-animation: gradient-bg 15s ease infinite;
+          animation: gradient-bg 15s ease infinite;
   top: 0;
   right: 0;
   width: 100vw;
@@ -32,6 +33,17 @@ button.btn {
   }
   button.btn {
     font-size: 12px;
+  }
+}
+@-webkit-keyframes gradient-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 @keyframes gradient-bg {
@@ -212,13 +224,13 @@ table {
   width: 90%;
   max-width: 90%;
   border-radius: 6px;
-  padding: 20px;
+  padding: 12px;
 }
 .chat .alert {
-  display: none !important;
+  display: none;
 }
 .chat.unread .alert {
-  display: block !important;
+  display: block;
 }
 .chat.multiple {
   align-items: flex-start;
@@ -253,6 +265,10 @@ table {
 }
 .chat__name {
   font-weight: 700;
+  cursor: pointer;
+}
+.chat__name:hover {
+  color: hsl(219deg, 85%, 26%);
 }
 .chat img.chat__1il {
   border-radius: 6px;
@@ -270,6 +286,9 @@ table {
     display: block;
   }
 }
+.chat__thumbnail {
+  cursor: pointer;
+}
 .chat .thumb {
   display: flex;
 }
@@ -284,14 +303,21 @@ table {
   }
 }
 .chat__message {
+  display: flex;
   align-items: center;
   color: #898c93;
+  flex-wrap: wrap;
 }
 .chat__message.second-message {
   padding: 18px 12px;
   border: 1px solid hsl(228deg, 6%, 65%);
   border-radius: 4px;
   margin-top: 12px;
+}
+.chat__message.second-message:hover {
+  cursor: pointer;
+  background: hsl(211deg, 68%, 94%);
+  border-color: transparenta;
 }
 .chat__message strong {
   color: hsl(219deg, 85%, 26%);
@@ -347,6 +373,9 @@ table {
 }
 
 @media (min-width: 0px) and (max-width: 374px) {
+  .chat {
+    max-width: 300px;
+  }
   .chat__name {
     display: flex;
     width: 100%;
@@ -355,7 +384,23 @@ table {
     flex-wrap: wrap;
   }
   .chat__message {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .chat__message .alert {
+    display: none !important;
+  }
+  .chat.unread .chat__message {
+    position: relative;
+  }
+  .chat.unread .chat__message:after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: hsl(1deg, 90%, 64%);
+    margin-left: 4px;
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
